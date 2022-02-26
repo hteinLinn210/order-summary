@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --pale-blue: hsl(225, 100%, 94%);
+   --bright-blue: hsl(245, 75%, 52%);
+   --very-pale-blue: hsl(225, 100%, 98%);
+   --desaturated-blue: hsl(224, 23%, 55%);
+   --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+   background: var(--pale-blue) url(../images/pattern-background-desktop.svg) no-repeat;
+   color: var(--desaturated-blue);
+   font-family: "Red Hat Display", sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   text-align: center;
+}
+
+header {
+   color: var(--dark-blue);
+   font-size: 30px;
+   font-weight: 900;
+}
+
+button {
+   border: none;
+   border-radius: 10px;
+   font-weight: 700;
+   cursor: pointer;
+   padding: 15px;
+   margin: 5px;
+   width: 80%;
+}
+
+a {
+   font-weight: 700;
+}
+
+a:hover {
+   text-decoration: none;
+   opacity: 60%;
+}
+
+.container {
+   background-color: white;
+   border-radius: 20px;
+   height: 700px;
+   width: 450px;
+   margin: 3rem auto;
+   box-shadow: 1px 8px 12px -1px var(--desaturated-blue);
+}
+
+.hero-img {
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+.order-detail {
+   padding: 50px 50px 20px;
+}
+
+.order-desc {
+   margin: 20px;
+}
+
+.plan {
+   background-color: var(--very-pale-blue);
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.plan-detail {
+   color: var(--dark-blue);
+   font-weight: 700;
+}
+
+.payment {
+   background-color: var(--bright-blue);
+   box-shadow: 1px 2px 12px -1px var(--desaturated-blue);
+   color: #fff;
+}
+
+.payment:hover {
+   opacity: 60%;
+}
+
+.cancel {
+   background-color: #fff;
+   color: var(--desaturated-blue);
+}
+
+.cancel:hover {
+   color: var(--dark-blue);
+}
