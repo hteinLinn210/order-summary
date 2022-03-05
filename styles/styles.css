@@ -89,6 +89,10 @@ h1 {
    margin-right: 1rem;
 }
 
+.price {
+   color: var(--desaturated-blue);
+}
+
 .btn {
    border: none;
    border-radius: 10px;
